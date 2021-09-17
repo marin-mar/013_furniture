@@ -1,0 +1,16 @@
+/* logo */
+
+.logo {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: $dark-color;
+
+  &__link {
+    @include btn_anim;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
