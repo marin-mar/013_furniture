@@ -1,0 +1,27 @@
+/* title */
+
+.title {
+  &__header {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  &__text {
+		display: block;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 80px;
+		position: relative;
+		max-width: 450px;
+
+    &::before {
+      content: "";
+      width: 70px;
+      height: 1px;
+      background-color: $dark-color;
+			position: absolute;
+			top: 50%;
+			left: 0;
+    }
+  }
+}

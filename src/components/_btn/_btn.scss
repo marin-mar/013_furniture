@@ -1,0 +1,32 @@
+.btn {
+  min-width: 120px;
+  min-height: 45px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: $light-color;
+  background-color: $first-color;
+  font-size: 18px;
+  line-height: 21px;
+  transition: all 0.5s linear;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $first-color;
+    background-color: $light-color;
+    box-shadow: $box-shadow;
+    text-decoration: none;
+    transform: scale(0.9);
+  }
+
+  &--search {
+    transition: all 0.5s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      transform: scale(0.9);
+    }
+  }
+}

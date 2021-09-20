@@ -13,6 +13,7 @@ const path = {
     json: project_folder + "/json/",
     video: project_folder + "/video/",
     php: project_folder + "/php/",
+    svg: project_folder + "/svg/",
   },
   src: {
     html: source_folder + "/html/*.html",
@@ -23,6 +24,7 @@ const path = {
     json: source_folder + "/json/*.json",
     video: source_folder + "/video/**/*",
     php: source_folder + "/php/**/*",
+    svg: source_folder + "/svg/**/*",
   },
   watch: {
     html: source_folder + "/**/*.html",
@@ -33,6 +35,7 @@ const path = {
     json: source_folder + "/json/*.json",
     video: source_folder + "/video/**/*",
     php: source_folder + "/php/**/*",
+    svg: source_folder + "/svg/**/*",
   },
   clean: "./" + project_folder + "/",
 };
@@ -64,7 +67,6 @@ const ttf2woff2 = require("gulp-ttf2woff2");
 const fonter = require("gulp-fonter");
 const htmlmin = require("gulp-htmlmin");
 const plumber = require("gulp-plumber");
-const { doesNotMatch } = require("assert");
 
 const server = () => {
   browserSync.init({
@@ -191,46 +193,16 @@ const img = () => {
 };
 
 const svg2sprite = () => {
-  return src([source_folder + "/sprite/*.svg"])
-    .pipe(
-      svgmin({
-        plugins: [
-          {
-            removeComments: true,
-          },
-          {
-            removeEmptyContainers: true,
-          },
-        ],
-      })
-    )
-    .pipe(
-      svgsprite({
-        mode: {
-          stack: {
-            sprite: "../icons/icons.svg",
-            example: true,
-          },
-        },
-      })
-    )
-    .pipe(dest(path.build.img));
+  if (path.src.svg) {
+    return src(path.src.svg).pipe(plumber()).pipe(svgmin()).pipe(svgsprite()).pipe(dest(path.build.svg));
+  } else {
+    console.log("No svg in this project");
+  }
 };
 
 const svg2css = () => {
   return src([source_folder + "/sprite/*.svg"])
-    .pipe(
-      svgmin({
-        plugins: [
-          {
-            removeComments: true,
-          },
-          {
-            removeEmptyContainers: true,
-          },
-        ],
-      })
-    )
+    .pipe(svgmin())
     .pipe(
       svgcsspseudo({
         fileName: "_svg",

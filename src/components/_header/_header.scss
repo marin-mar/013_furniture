@@ -12,50 +12,38 @@
   color: $dark-color;
   background-color: transparent;
   text-align: center;
-  // padding: 5px;
 
   &__container {
     @include container;
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: space-around;
-    //   align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
 
-  // &__logo {
-  //   z-index: 5;
-  // }
+  &__logo {
+    z-index: 5;
+  }
 
-  // &__menu {
-  //   order: 1;
-  //   margin: 0 30px;
+  &__menu {
+  }
 
-  //   @media (min-width: 1900px) {
-  //     order: 0;
-  //   }
-  // }
+  &--sticky {
+    padding: 5px 0;
+    box-shadow: $box-shadow;
+    background-color: $third-color;
 
-  // &__login {
-  //   display: none;
+    & > .container > .menu > .menu__body::before {
+      height: 30px;
+    }
 
-  //   @media (min-width: 576px) {
-  //     display: flex;
-  //     z-index: 5;
-  //     margin-left: auto;
-  //   }
-
-  //   @media (min-width: 1900px) {
-  //     margin-left: 0;
-  //   }
-  // }
-
-  // &--sticky {
-  //   padding: 5px;
-  //   box-shadow: $box-shadow;
-  //   background-color: $dark-color;
-
-  //   & > .container > .menu > .menu__body::before {
-  //     height: 30px;
-  //   }
-  // }
+    & > .container {
+      padding: 0;
+    }
+  }
 }

@@ -1,0 +1,19 @@
+/* clients */
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
+
+  &__item {
+    margin: 10px;
+  }
+
+  &__img {
+  }
+}

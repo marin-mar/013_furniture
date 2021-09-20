@@ -9,10 +9,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "deploy": "gh-pages -d build",
-    "svg2sprite": "gulp svg2sprite",
-    "svg2css": "gulp svg2css",
-    "otf2ttf": "gulp otf2ttf"
+    "deploy": "gh-pages -d build"
   },
   "license": "ISC",
   "devDependencies": {

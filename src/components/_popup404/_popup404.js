@@ -1,6 +1,6 @@
 /* popup 404 for nonexistent links */
 
-const nonexistentLinks = document.querySelectorAll('a[href="#"]');
+const nonexistentLinks = document.querySelectorAll('[href="#"]');
 
 const popupBg = document.querySelector(".popup404");
 const popup = document.querySelector(".popup404__body");

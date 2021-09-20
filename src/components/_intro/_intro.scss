@@ -1,0 +1,103 @@
+/* intro */
+
+.intro {
+  margin-top: 70px;
+  width: 100%;
+  height: 750px;
+  position: relative;
+
+  &__container {
+    background-image: url("../../img/intro/intro_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text-container {
+    background: linear-gradient(112.8deg, rgba(207, 207, 207, 0.26) 0%, rgba(207, 207, 207, 0.06) 92.87%);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    min-height: 340px;
+  }
+
+  &__text-block {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30px;
+
+    @media (min-width: 768px) {
+      padding: 0;
+      padding-left: 5%;
+    }
+  }
+
+  &__title {
+    font-family: "Revalia", cursive;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 5px;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 23px;
+    color: $light-color;
+    margin-top: 25px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 130px;
+  }
+
+  &__aside {
+    position: absolute;
+    width: 20%;
+    min-width: 40px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(30px);
+    z-index: 2;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 250px;
+      background-color: $dark-color;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    top: 27%;
+    left: 0;
+    z-index: 3;
+
+    @media (min-width: 768px) {
+      left: 15%;
+    }
+
+    & > .social {
+      flex-direction: column;
+    }
+  }
+}
