@@ -1,0 +1,58 @@
+<div class="furniture">
+  <div class="furniture__container">
+    <div class="furniture__title">
+      @@include('../_title/_title.html', { 
+				"title-header": "Our Furniture", 
+				"title-text": "It is a long established fact that a reader will be distracted by the service.", })
+    </div>
+    <!-- ./furniture__title -->
+    <div class="furniture__search-block">
+      <form class="furniture__search-form" action="#" method="get">
+        <input class="furniture__search" name="searchFurniture" placeholder="Search a furniture" type="search" />
+        <button class="furniture__button" type="submit"></button>
+      </form>
+			<!-- ./furniture__search-form -->
+			<ul class="furniture__filter-list">
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">All</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Chair</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Table</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Bed</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Sofa</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Wardrobe</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Almirah</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Dimple</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Rack</button>
+				</li>
+				<li class="furniture__filter-item">
+					<button class="furniture__filter-btn" type="button">Stand</button>
+				</li>
+			</ul>
+			<!-- ./furniture__filter-list -->
+    </div>
+    <!-- ./furniture__search-block -->
+		<ul class="furniture__list"></ul>
+    <!-- ./dynamically rendering of furniture__list -->
+		<div class="furniture__button--all">
+			@@include('../_btn/_btn.html', {"btnText": "View All"})
+		</div>
+  </div>
+  <!-- ./furniture__container -->
+</div>
+<!-- ./furniture -->

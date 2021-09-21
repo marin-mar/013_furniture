@@ -126,5 +126,13 @@
       color: $second-color;
       text-decoration: underline;
     }
+
+    &--btn {
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+    }
   }
 }

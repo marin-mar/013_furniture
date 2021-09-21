@@ -1,0 +1,109 @@
+/* furniture */
+
+.furniture {
+  margin-top: 120px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__search-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+		margin-top: 40px;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &__search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__search {
+    font-size: 20px;
+    line-height: 18px;
+    padding: 15px;
+    background-color: $search-color;
+    border-radius: 5px;
+  }
+
+  &__button {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: $light-color;
+    background-color: $first-color;
+    border-radius: 5px;
+    background-image: url("../../img/svg/Search-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    transition: all 0.5s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: $box-shadow;
+      transform: scale(0.9);
+    }
+
+		&--all {
+			max-width: 150px;
+			margin: 10px auto;
+		}
+  }
+
+  &__filter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 576px) {
+      justify-content: space-around;
+      margin-left: 2rem;
+    }
+  }
+
+  &__filter-item {
+    padding: 15px;
+  }
+
+  &__filter-btn {
+    @include no-btn;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+  }
+
+  &__list {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+      margin: 50px;
+    }
+  }
+}

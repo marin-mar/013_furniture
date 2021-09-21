@@ -1,10 +1,12 @@
 <div class="service" id="service">
-  <div class="service__title">
-    @@include('../_title/_title.html', { 
-      "title-header": "We provide that service", 
-      "title-text": "It is a long established fact that a reader will be distracted by the service", })
+  <div class="service__container">
+    <div class="service__title">
+      @@include('../_title/_title.html', { 
+        "title-header": "We provide that service", 
+        "title-text": "It is a long established fact that a reader will be distracted by the service", })
+    </div>
+    <ul class="service__list"></ul>
+    <!-- ./dynamically rendering of service__list -->
   </div>
-  <ul class="service__list"></ul>
-  <!-- ./dynamically rendering of service__list -->
 </div>
 <!-- ./service -->

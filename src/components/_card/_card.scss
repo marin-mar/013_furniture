@@ -1,1 +1,56 @@
 /* card */
+.card {
+  max-width: 80vw;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: $box-shadow;
+  background-color: $third-color;
+
+  @media (min-width: 576px) {
+    max-width: 360px;
+  }
+
+  &__img {
+    width: 75px;
+    height: 75px;
+
+    &--big {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    flex-grow: 1;
+  }
+
+  &__price {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 2rem;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 80%;
+  }
+}
