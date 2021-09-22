@@ -238,7 +238,7 @@ function fontsStyle() {
           if (c_fontname != fontname) {
             fs.appendFile(
               source_folder + "/scss/_fonts.scss",
-              '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n',
+              '@include font("' + fontname + '", "' + fontname + '", 400, normal);\r\n',
               cb
             );
           }
