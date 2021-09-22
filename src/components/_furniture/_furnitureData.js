@@ -3,7 +3,7 @@
 const furnitureData = [
   {
     id: "1",
-    cardImg: "../../img/furniture/furniture__001.jpg",
+    cardImg: "img/furniture/furniture__001.jpg",
     cardTitle: "Furniture Name",
     cardPrice: "$ 250",
     cardText: "It is a long estiabs lished fact that a reader will be the service",
@@ -11,7 +11,7 @@ const furnitureData = [
   },
   {
     id: "2",
-    cardImg: "../../img/furniture/furniture__002.jpg",
+    cardImg: "img/furniture/furniture__002.jpg",
     cardTitle: "Furniture Name",
 
     cardPrice: "$ 250",
@@ -20,7 +20,7 @@ const furnitureData = [
   },
   {
     id: "3",
-    cardImg: "../../img/furniture/furniture__003.jpg",
+    cardImg: "img/furniture/furniture__003.jpg",
     cardTitle: "Furniture Name",
     cardPrice: "$ 250",
     cardText: "It is a long estiabs lished fact that a reader will be the service",
@@ -28,7 +28,7 @@ const furnitureData = [
   },
   {
     id: "4",
-    cardImg: "../../img/furniture/furniture__004.jpg",
+    cardImg: "img/furniture/furniture__004.jpg",
     cardTitle: "Furniture Name",
     cardPrice: "$ 250",
     cardText: "It is a long estiabs lished fact that a reader will be the service",
@@ -36,7 +36,7 @@ const furnitureData = [
   },
   {
     id: "5",
-    cardImg: "../../img/furniture/furniture__005.jpg",
+    cardImg: "img/furniture/furniture__005.jpg",
     cardTitle: "Furniture Name",
 
     cardPrice: "$ 250",
@@ -45,7 +45,7 @@ const furnitureData = [
   },
   {
     id: "6",
-    cardImg: "../../img/furniture/furniture__006.jpg",
+    cardImg: "img/furniture/furniture__006.jpg",
     cardTitle: "Furniture Name",
     cardPrice: "$ 250",
     cardText: "It is a long estiabs lished fact that a reader will be the service",
@@ -53,7 +53,7 @@ const furnitureData = [
   },
   {
     id: "7",
-    cardImg: "../../img/furniture/furniture__007.jpg",
+    cardImg: "img/furniture/furniture__007.jpg",
     cardTitle: "Furniture Name",
 
     cardPrice: "$ 250",
@@ -62,7 +62,7 @@ const furnitureData = [
   },
   {
     id: "8",
-    cardImg: "../../img/furniture/furniture__008.jpg",
+    cardImg: "img/furniture/furniture__008.jpg",
     cardTitle: "Furniture Name",
     cardPrice: "$ 250",
     cardText: "It is a long estiabs lished fact that a reader will be the service",

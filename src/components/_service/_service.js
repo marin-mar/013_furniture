@@ -3,7 +3,7 @@
 const serviceData = [
   {
     id: "1",
-    cardImg: "../../img/service/Delivery.svg",
+    cardImg: "img/service/Delivery.svg",
     cardTitle: "Free Delevery",
     cardPrice: "",
     cardText: "It is a long established fact that a reader will be the service.",
@@ -11,7 +11,7 @@ const serviceData = [
   },
   {
     id: "2",
-    cardImg: "../../img/service/Guarantee.svg",
+    cardImg: "img/service/Guarantee.svg",
     cardTitle: "100% Guarantee",
     cardPrice: "",
     cardText: "It is a long established fact that a reader will be the service.",
@@ -19,7 +19,7 @@ const serviceData = [
   },
   {
     id: "3",
-    cardImg: "../../img/service/Quality.svg",
+    cardImg: "img/service/Quality.svg",
     cardTitle: "Best Quality",
     cardPrice: "",
     cardText: "It is a long established fact that a reader will be the service.",
