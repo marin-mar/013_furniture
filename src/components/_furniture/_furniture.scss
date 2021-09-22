@@ -11,6 +11,15 @@
     display: flex;
     justify-content: center;
     text-align: center;
+
+    & > .title > .title__text {
+      padding-left: 0;
+
+      &::before {
+        width: 0;
+        height: 0;
+      }
+    }
   }
 
   &__search-block {
@@ -18,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-		margin-top: 40px;
+    margin-top: 40px;
 
     @media (min-width: 1200px) {
       flex-direction: row;
@@ -60,10 +69,10 @@
       transform: scale(0.9);
     }
 
-		&--all {
-			max-width: 150px;
-			margin: 10px auto;
-		}
+    &--all {
+      max-width: 150px;
+      margin: 10px auto;
+    }
   }
 
   &__filter-list {

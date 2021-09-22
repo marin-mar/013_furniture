@@ -8,6 +8,10 @@
 
   &__title {
     margin-bottom: 45px;
+
+    @media (min-width: 576px) {
+      margin-left: 9rem;
+    }
   }
 
   &__list {
@@ -21,7 +25,7 @@
     }
   }
 
-	&__item {
-		margin: 15px;
-	}
+  &__item {
+    margin: 15px;
+  }
 }

@@ -38,8 +38,18 @@
   background-color: transparent;
   border-radius: 0;
   cursor: pointer;
-  // appearance: none;
   display: #{$display};
+  // appearance: none;
+}
+
+@mixin btn($scale: 0.9) {
+  transition: all 0.5s linear;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale($scale);
+  }
 }
 
 // @mixin btn_anim($scaleMax: 1.05, $scaleMin: 0.95) {

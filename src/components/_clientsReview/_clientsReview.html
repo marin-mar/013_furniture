@@ -1,0 +1,34 @@
+<div class="clients-review">
+  <div class="clients-review__container">
+    <div class="clients-review__title">
+      @@include('../_title/_title.html', { 
+				"title-header" : "What say clients about us", 
+				"title-text" : "It is a long established fact that a reader will be distracted by the service." })
+    </div>
+    <!-- ./clients-review__title -->
+    <div class="clients-review__content">
+      <button class="clients-review__btn clients-review__btn--prev">&lt;</button>
+      <ul class="clients-review__list">
+        <li class="clients-review__item">
+          @@include('../_article/_article.html', { 
+						"articleImg" : "../../img/clientsReview/clientsReview__01.jpg", 
+						"articleTitle" : "Mr. Jone Ambrose", 
+						"articlePubdate" : "2021-07-21", 
+						"articleText" : "“Lorem Ipsum has been the industry by standard dummy text ever to since the 1500s, it’s type and scrambled it to make a type specimen book. It’s has survived not only five.”" })
+        </li>
+        <li class="clients-review__item">
+          @@include('../_article/_article.html', { 
+						"articleImg" : "../../img/clientsReview/clientsReview__02.jpg", 
+						"articleTitle" : "Mrs. Joan Sims", 
+						"articlePubdate" : "2021-06-02", 
+						"articleText" : "“Lorem Ipsum has been the industry by standard dummy text ever to since the 1500s, it’s type and scrambled it to make a type specimen book. It’s has survived not only five.”" })
+        </li>
+      </ul>
+      <!-- ./clients-review__list -->
+      <button class="clients-review__btn clients-review__btn--next">&gt;</button>
+    </div>
+		<!-- ./clients-review__content -->
+  </div>
+  <!-- ./clients-review__container -->
+</div>
+<!-- ./clients-review -->
