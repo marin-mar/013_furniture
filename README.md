@@ -7,7 +7,9 @@
 - Меню складывается в бургер-меню, фиксировано при прокрутке экрана, плавный скрол до секции.<br>
 - При клике на несуществующие ссылки всплывает попап 404 (как альтернатива странице 404).<br>
 - Продукты (Our Furniture) подгражуются из json-файла. На GitHub не работает метод fetch, поэтому json вмонтирован в сам js-файл с продуктами.<br>
-- Итоговые файлы в двух вариантах - сжатом для сайта и развернутом для наглядности. Проверено в валидаторах W3C. PageSpeed Insights для мобильных 93% и для ПК 100%.
+- Итоговые файлы в двух вариантах - сжатом для сайта и развернутом для наглядности. Проверено в валидаторах W3C. PageSpeed Insights для мобильных 93% и для ПК 100%.<br>
+- Сайт размещен:<br>
+<a href="https://marin-mar.github.io/furniture/" rel="noreferrer" target="blank" >https://marin-mar.github.io/furniture/</a><br>
 </h3>
 ================================
 <h3>Explanation of the project:</h3> 
@@ -19,5 +21,7 @@
 - The menu is folded into a burger-menu, fixed when scrolling the screen, smooth scrolling to the section.<br>
 - When clicking on non-existent links, a pop-up 404 pops up (as an alternative to the 404 page).<br>
 - Products (Our Furniture) are loaded from a json-file. The fetch method does not work on GitHub, so the json is embedded in the js-file with the products itself.<br>
-- Summary files in two versions - compressed for the site and expanded for clarity. Tested in W3C validators. PageSpeed Insights for mobile 93% and for PC 100%.
+- Summary files in two versions - compressed for the site and expanded for clarity. Tested in W3C validators. PageSpeed Insights for mobile 93% and for PC 100%.<br>
+- Site is published at:<br>
+<a href="https://marin-mar.github.io/furniture/" rel="noreferrer" target="blank" >https://marin-mar.github.io/furniture/</a><br>
 </h3>
